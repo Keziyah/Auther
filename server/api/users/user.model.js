@@ -6,6 +6,7 @@ var db = require('../../_db');
 
 var User = db.define('user', {
   name: Sequelize.STRING,
+  googleId: Sequelize.STRING,
   photo: {
     type: Sequelize.STRING,
     defaultValue: '/images/default-photo.jpg'
